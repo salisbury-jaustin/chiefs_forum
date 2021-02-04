@@ -6,3 +6,9 @@
     --red: #E31837;
     --gold: #FFB81C; 
 }
+
+/* media queries */
+/* portrait/lanscape phones AND portrait tablets */
+@media only screen and (min-width: 200px) and (max-width: 767.98px) {
+
+}
