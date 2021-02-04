@@ -32,7 +32,7 @@ html, body {
         [sec-content-end main-content-start] 45% 
         [main-content-end footer-start] 5%; 
 }
-.main {
+.layoutMain {
     display: grid;
     grid-template-columns: [left-col-start] 0%
         [left-col-end content-start] 100%
