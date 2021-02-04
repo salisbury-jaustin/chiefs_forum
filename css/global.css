@@ -7,8 +7,31 @@
     --gold: #FFB81C; 
 }
 
+/* basic page sizing */
+* {box-sizing: border-box;} 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 /* media queries */
-/* portrait/lanscape phones AND portrait tablets */
+/* portrait/lanscape phones */
 @media only screen and (min-width: 200px) and (max-width: 767.98px) {
+.layout {
+    display: grid;
+
+}
+}
+/* portrait tablets */
+/* portrait tablets are displayed the same as portrait/landscape phones */
+@media only screen and (min-width: 768px) and (max-width: 1199.98px) and (orientation: portrait) {
+
+}
+/* landscape tablets and small monitors/laptops */
+@media only screen and (min-width: 768px) and (max-width: 1199.98px) and (orientation: landscape) {
+
+}
+/* desktops */
+@media only screen and (min-width: 1200px) {
 
 }
