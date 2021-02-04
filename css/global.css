@@ -19,7 +19,25 @@ html, body {
 @media only screen and (min-width: 200px) and (max-width: 767.98px) {
 .layout {
     display: grid;
-
+    grid-template-columns: [left-margin-start] 0%
+        [left-margin-end left-ybar-start] 0%
+        [left-ybar-end left-spacer-start] 0%
+        [left-spacer-end body-start] 100%
+        [body-end right-spacer-start] 0%
+        [right-spacer-end right-ybar-start] 0%
+        [right-ybar-end right-margin-start] 0%;
+    grid-template-rows: [header-start] 15% 
+        [header-end nav-start] 10% 
+        [nav-end sec-content-start] 25% 
+        [sec-content-end main-content-start] 45% 
+        [main-content-end footer-start] 5%; 
+}
+.main {
+    display: grid;
+    grid-template-columns: [left-col-start] 0%
+        [left-col-end content-start] 100%
+        [content-end right-col-start] 0%;
+    grid-template-rows: 100%;
 }
 }
 /* portrait tablets */
@@ -29,9 +47,51 @@ html, body {
 }
 /* landscape tablets and small monitors/laptops */
 @media only screen and (min-width: 768px) and (max-width: 1199.98px) and (orientation: landscape) {
-
+.layout {
+    display: grid;
+    grid-template-columns: [left-margin-start] 10%
+        [left-margin-end left-ybar-start] 5%
+        [left-ybar-end left-spacer-start] 5%
+        [left-spacer-end body-start] 60%
+        [body-end right-spacer-start] 5%
+        [right-spacer-end right-ybar-start] 5%
+        [right-ybar-end right-margin-start] 10%;
+    grid-template-rows: [header-start] 15% 
+        [header-end nav-start] 10% 
+        [nav-end sec-content-start] 25% 
+        [sec-content-end main-content-start] 45% 
+        [main-content-end footer-start] 5%; 
+}
+.main {
+    display: grid;
+    grid-template-columns: [left-col-start] 15%
+        [left-col-end content-start] 85%
+        [content-end right-col-start] 0%;
+    grid-template-rows: 100%;
+}
 }
 /* desktops */
 @media only screen and (min-width: 1200px) {
-
+.layout {
+    display: grid;
+    grid-template-columns: [left-margin-start] 10%
+        [left-margin-end left-ybar-start] 5%
+        [left-ybar-end left-spacer-start] 5%
+        [left-spacer-end body-start] 60%
+        [body-end right-spacer-start] 5%
+        [right-spacer-end right-ybar-start] 5%
+        [right-ybar-end right-margin-start] 10%;
+    grid-template-rows: [header-start] 15% 
+        [header-end nav-start] 10% 
+        [nav-end sec-content-start] 25% 
+        [sec-content-end main-content-start] 45% 
+        [main-content-end footer-start] 5%; 
+}
+.main {
+    display: grid;
+    grid-template-columns: [left-col-start] 15%
+        [left-col-end content-start] 70%
+        [content-end right-col-start] 15%;
+    grid-template-rows: 100%;
+}
 }
